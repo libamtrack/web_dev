@@ -163,27 +163,6 @@
           "jsonConfigPath": "/ElectronRange/MaxElectronRangeMSingle.json"
         }
       ]
-    },
-    {
-      "name": "Data Range",
-      "style": {
-        "background": "#3727AA",
-        "border": "3727AA",
-        "color": "white"
-      },
-      "functionsStyle": {
-        "color": "black"
-      },
-      "functions": [
-        {
-          "name": "CSDA Range Single",
-          "jsonConfigPath": "/DataRange/CSDARangeSingle.json"
-        },
-        {
-          "name": "CSDA Energy After Slab",
-          "jsonConfigPath": "/DataRange/CSDAEnergyAfterSlab.json"
-        }
-      ]
     }
   ],
   "dictionaries": [
