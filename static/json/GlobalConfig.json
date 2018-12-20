@@ -179,7 +179,7 @@
       "jsonConfigPath": "/dictionaries/ERModels.json"
     }
   ],
-  "deployDate":"$current_date_time",
-  "deployBranch":"$TRAVIS_BRANCH",
-  "deployCommit":"$TRAVIS_COMMIT"
+  "deployDate":"",
+  "deployBranch":"NO_DEPLOY_BRANCH",
+  "deployCommit":"NO_DEPLOY_COMMIT"
 }
