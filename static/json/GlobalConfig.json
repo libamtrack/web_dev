@@ -180,6 +180,6 @@
     }
   ],
   "deployDate":"",
-  "deployBranch":"NO_DEPLOY_BRANCH",
-  "deployCommit":"b55030736caa5bcbe7a74a318b63d06811d1b8fe"
+  "deployBranch":"feature/depoly-info-in-footer",
+  "deployCommit":"09c9ad5210909450c5c0375bb555500c53acdf18"
 }
