@@ -179,7 +179,7 @@
       "jsonConfigPath": "/dictionaries/ERModels.json"
     }
   ],
-  "deployDate":"Sat Jan  5 23:18:38 CET 2019",
-  "deployBranch":"feature/compiled_lib/20190105_221731",
-  "deployCommit":"a9b33d8"
+  "deployDate":"Sun Jan  6 01:09:31 CET 2019",
+  "deployBranch":"feature/compiled_lib/20190106_000818",
+  "deployCommit":"fca9a6b"
 }
