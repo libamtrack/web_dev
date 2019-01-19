@@ -1,16 +1,16 @@
 {
-  "visibleName": "Track width",
+  "visibleName": "Maximum electron range",
   "functionName": "AT_max_electron_ranges_m",
-  "description": "Returns the track width (maximum electron range) for a given parametrization",
-  "xTitle": "Energy [MeV/amu]",
-  "yTitle": "track radius [um]",
+  "description": "Returns the maximum electron range (track radius) for a given parametrization",
+  "xTitle": "Energy [MeV]",
+  "yTitle": "electron range (track radius) [m]",
   "plot": true,
   "formItems": [
     {
       "type": "entry_module",
       "parameterName": "E_MeV_u",
-      "startholder": "0.1",
-      "endholder": "500",
+      "startholder": "0.00001",
+      "endholder": "10",
       "intervalType": "points",
       "stepDefaultValue": "0.01",
       "pointsDefaultNumber": "500",
@@ -19,6 +19,11 @@
         "min": "0.000001",
         "max": "1000"
       }
+    },
+    {
+      "type": "plot_type",
+      "visible": true,
+      "defaultValue": "lines"
     },
     {
       "type": "select",
@@ -30,7 +35,7 @@
     },{
       "type": "select",
       "parameterName": "er_model",
-      "label": "Parametrisation",
+      "label": "ER model",
       "values": "er_models",
       "asManyAsPoints": false,
       "defaultValue": 7,
@@ -40,8 +45,7 @@
   "moreOptions": {
     "visible": true,
     "defaultXAxisType": "log",
-    "defaultYAxisType": "log",
-    "plotType": "lines"
+    "defaultYAxisType": "log"
   },
   "modals": {
     "dataSeries": true,

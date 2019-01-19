@@ -60,13 +60,17 @@
       "asManyAsPoints": false,
       "defaultValue": 2,
       "description": "Choose source type"
+    },
+    {
+      "type": "plot_type",
+      "visible": true,
+      "defaultValue": "lines"
     }
   ],
   "moreOptions": {
     "visible": true,
     "defaultXAxisType": "linear",
-    "defaultYAxisType": "linear",
-    "plotType": "lines"
+    "defaultYAxisType": "linear"
   },
   "modals": {
     "dataSeries": true,
