@@ -14080,7 +14080,7 @@ function _AT_Vavilov_energy_loss_distribution($0,$1,$2,$3,$4,$5,$6) {
  $36 = $11;
  $37 = $12;
  $38 = $17;
- _AT_lambda_vavilov_from_energy_loss_multi($32,$33,$34,$35,$36,$37,$38);
+ _AT_lambda_landau_from_energy_loss_multi($32,$33,$34,$35,$36,$37,$38);
  $39 = $7;
  $40 = $17;
  $41 = $14;
