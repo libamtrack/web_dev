@@ -66,14 +66,6 @@
         {
           "name": "Dose from fluence and energy",
           "jsonConfigPath": "/PhysicsRoutines/DoseFromFluence.json"
-        },
-        {
-          "name": "Energy loss Landau",
-          "jsonConfigPath": "/PhysicsRoutines/EnergyLossLandau.json"
-        },
-        {
-          "name": "Energy loss Vavilov",
-          "jsonConfigPath": "/PhysicsRoutines/EnergyLossVavilov.json"
         }
       ]
     },
@@ -187,7 +179,7 @@
       "jsonConfigPath": "/dictionaries/ERModels.json"
     }
   ],
-  "deployDate":"Wed Jan 23 23:26:43 CET 2019",
-  "deployBranch":"feature/174_Landau_Vavilov_energy_loss",
-  "deployCommit":"61d3805"
+  "deployDate":"Thu Jan 24 08:10:30 CET 2019",
+  "deployBranch":"feature/compiled_lib/20190124_070932",
+  "deployCommit":"6e235ca"
 }
