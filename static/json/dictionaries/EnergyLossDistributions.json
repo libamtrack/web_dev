@@ -6,13 +6,5 @@
     {
         "name" : "Landau",
         "value": 2 
-    },
-    {
-        "name" : "Gauss",
-        "value": 3
-    },
-    {
-        "name" : "auto",
-        "value": 4
     }
 ]
