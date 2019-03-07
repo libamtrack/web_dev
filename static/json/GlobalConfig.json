@@ -191,7 +191,7 @@
       "jsonConfigPath": "/dictionaries/EnergyLossDistributions.json"
     }
   ],
-  "deployDate":"Thu Mar  7 17:24:59 CET 2019",
-  "deployBranch":"feature/compiled_lib/20190307_162341",
+  "deployDate":"Thu Mar  7 17:26:13 CET 2019",
+  "deployBranch":"feature/compiled_lib/20190307_162457",
   "deployCommit":"3f4f9d8"
 }
