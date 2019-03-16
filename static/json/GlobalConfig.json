@@ -200,7 +200,7 @@
     }
 
   ],
-  "deployDate":"Sat Mar 16 10:37:51 CET 2019",
-  "deployBranch":"feature/small_features",
-  "deployCommit":"5f2566d"
+  "deployDate":"Sat Mar 16 13:47:50 CET 2019",
+  "deployBranch":"feature/compiled_lib/20190316_124630",
+  "deployCommit":"036eb8f"
 }
