@@ -52,7 +52,7 @@
       },
       "functions": [
         {
-          "name": "Dose (physical) vs depth",
+          "name": "Physical dose vs depth",
           "jsonConfigPath": "/ProtonTherapyModels/BortfeldModelDepthDose.json"
         },
         {
@@ -225,7 +225,7 @@
     }
 
   ],
-  "deployDate":"Thu Mar 21 20:26:26 CET 2019",
-  "deployBranch":"feature/265_multiple_number_calc",
-  "deployCommit":"f36bbb3"
+  "deployDate":"Sat Mar 23 22:49:48 CET 2019",
+  "deployBranch":"feature/compiled_lib/20190323_214847",
+  "deployCommit":"9be1bd6"
 }
