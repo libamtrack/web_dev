@@ -225,7 +225,7 @@
     }
 
   ],
-  "deployDate":"Sat Mar 23 22:49:48 CET 2019",
-  "deployBranch":"feature/compiled_lib/20190323_214847",
-  "deployCommit":"9be1bd6"
+  "deployDate":"Sat Mar 23 23:18:18 CET 2019",
+  "deployBranch":"feature/270_sobp_range",
+  "deployCommit":"0cc22ee"
 }
