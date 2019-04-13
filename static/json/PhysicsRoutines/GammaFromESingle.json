@@ -1,10 +1,9 @@
 {
   "visibleName": "Gamma From Energy",
-  "functionName": "AT_beta_gamma_from_E_single",
+  "functionName": "AT_gamma_from_E_single",
   "description": "Returns relativistic gamma for single value of energy",
   "plot": false,
-  "resultPrecision": [6,6],
-  "resultLabel": ["β", "γ"],
+  "resultPrecision": 6,
   "formItems": [
     {
       "type": "input",
