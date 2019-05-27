@@ -225,7 +225,7 @@
     }
 
   ],
-  "deployDate":"Mon May 27 13:29:46 CEST 2019",
+  "deployDate":"Mon May 27 13:45:16 CEST 2019",
   "deployBranch":"feature/344-calculator-results-with-plot",
-  "deployCommit":"076724f"
+  "deployCommit":"c0957b1"
 }
