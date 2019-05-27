@@ -4,9 +4,6 @@
   "description": "Analytical model of proton depth-dose curve (Bragg curve) according to Bortfeld model (DOI 10.1118/1.598116). The model assumes a pencil-beam like source, includes range straggling and initial kinetic energy spread.",
   "xTitle": "Depth [cm]",
   "yTitle": "Dose [Gy]",
-  "resultPrecision": [6,6,6],
-  "resultLabel": ["Range", "FWHM", "Max/entrance dose"],
-  "resultUnit": ["cm", "cm", ""],
   "plot": true,
   "formItems": [
     {
@@ -29,7 +26,7 @@
       "parameterName": "E_MeV_u",
       "label": "Energy [MeV]",
       "placeholder": "150.0",
-      "defaultValue": 150.0,
+      "defaultValue": "150.0",
       "validations": {
         "type": "float",
         "min": "0.000001",
@@ -41,7 +38,7 @@
       "parameterName": "sigma_E_MeV_u",
       "label": "Energy spread (σ) [MeV]",
       "placeholder": "1.5",
-      "defaultValue": 1.5,
+      "defaultValue": "1.5",
       "validations": {
         "type": "float",
         "min": "0.0",
@@ -53,25 +50,12 @@
       "parameterName": "entrance_dose_Gy",
       "label": "Entrance dose [Gy]",
       "placeholder": "2.0",
-      "defaultValue": 2,
+      "defaultValue": "2",
       "description": "dose in Gy",
       "validations": {
         "type": "float",
         "min": "0.000001",
         "max": "10000000000000000"
-      }
-    },
-    {
-      "type": "input",
-      "parameterName": "eps",
-      "label": "eps",
-      "placeholder": "0.03",
-      "defaultValue": 0.03,
-      "description": "eps",
-      "validations": {
-        "type": "float",
-        "min": "0.0",
-        "max": "0.2"
       }
     },
     {
