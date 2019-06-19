@@ -226,7 +226,7 @@
     }
 
   ],
-  "deployDate":"Wed Jun 12 15:47:25 CEST 2019",
-  "deployBranch":"feature/compiled_lib/20190612_134630",
-  "deployCommit":"cab5539"
+  "deployDate":"Wed Jun 19 15:52:03 CEST 2019",
+  "deployBranch":"feature/compiled_lib/20190619_134801",
+  "deployCommit":"3580e45"
 }
