@@ -230,7 +230,7 @@
     }
 
   ],
-  "deployDate":"Wed Aug 14 15:53:23 CEST 2019",
-  "deployBranch":"feature/compiled_lib/20190814_135214",
-  "deployCommit":"50bd324"
+  "deployDate":"Wed Aug 21 15:53:11 CEST 2019",
+  "deployBranch":"feature/compiled_lib/20190821_135218",
+  "deployCommit":"36e169f"
 }
