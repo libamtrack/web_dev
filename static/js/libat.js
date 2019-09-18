@@ -458,6 +458,7 @@ function removeFunctionWasm(index) {
 // 'sig' parameter is required for the llvm backend but only when func is not
 // already a WebAssembly function.
 function addFunction(func, sig) {
+  assert(typeof func !== 'undefined');
 
 
   var base = 0;
@@ -1614,10 +1615,10 @@ function getBinaryPromise() {
 // Create the wasm instance.
 // Receives the wasm imports, returns the exports.
 function createWasm(env) {
-
   // prepare imports
   var info = {
-    'env': env
+    'env': env,
+    'wasi_unstable': env
     ,
     'global': {
       'NaN': NaN,
@@ -2773,7 +2774,7 @@ function copyTempDouble(ptr) {
         // Node.js < 4.5 compatibility: Buffer.from does not support ArrayBuffer
         // Buffer.from before 4.5 was just a method inherited from Uint8Array
         // Buffer.alloc has been added with Buffer.from together, so check it instead
-        return Buffer.alloc ? Buffer.from(arrayBuffer) : new Buffer(arrayBuffer);
+        return Buffer["alloc"] ? Buffer.from(arrayBuffer) : new Buffer(arrayBuffer);
       },mount:function (mount) {
         assert(ENVIRONMENT_HAS_NODE);
         return NODEFS.createNode(null, '/', NODEFS.getMode(mount.opts.root), 0);
@@ -5005,17 +5006,6 @@ function copyTempDouble(ptr) {
   }
   }
 
-  function ___syscall146(which, varargs) {SYSCALLS.varargs = varargs;
-  try {
-   // writev
-      var stream = SYSCALLS.getStreamFromFD(), iov = SYSCALLS.get(), iovcnt = SYSCALLS.get();
-      return SYSCALLS.doWritev(stream, iov, iovcnt);
-    } catch (e) {
-    if (typeof FS === 'undefined' || !(e instanceof FS.ErrnoError)) abort(e);
-    return -e.errno;
-  }
-  }
-
   function ___syscall195(which, varargs) {SYSCALLS.varargs = varargs;
   try {
    // SYS_stat64
@@ -5219,6 +5209,22 @@ function copyTempDouble(ptr) {
   }
 
   function ___unlock() {}
+
+  
+  function _fd_write(stream, iov, iovcnt, pnum) {try {
+  
+      stream = FS.getStream(stream);
+      if (!stream) throw new FS.ErrnoError(9);
+      var num = SYSCALLS.doWritev(stream, iov, iovcnt);
+      HEAP32[((pnum)>>2)]=num
+      return 0;
+    } catch (e) {
+    if (typeof FS === 'undefined' || !(e instanceof FS.ErrnoError)) abort(e);
+    return -e.errno;
+  }
+  }function ___wasi_fd_write() {
+  return _fd_write.apply(null, arguments)
+  }
 
   function _abort() {
       Module['abort']();
@@ -5460,7 +5466,6 @@ var asmLibraryArg = {
   "___setErrNo": ___setErrNo,
   "___syscall140": ___syscall140,
   "___syscall145": ___syscall145,
-  "___syscall146": ___syscall146,
   "___syscall195": ___syscall195,
   "___syscall197": ___syscall197,
   "___syscall220": ___syscall220,
@@ -5469,11 +5474,13 @@ var asmLibraryArg = {
   "___syscall54": ___syscall54,
   "___syscall6": ___syscall6,
   "___unlock": ___unlock,
+  "___wasi_fd_write": ___wasi_fd_write,
   "_abort": _abort,
   "_emscripten_get_heap_size": _emscripten_get_heap_size,
   "_emscripten_memcpy_big": _emscripten_memcpy_big,
   "_emscripten_resize_heap": _emscripten_resize_heap,
   "_exit": _exit,
+  "_fd_write": _fd_write,
   "_getenv": _getenv,
   "_llvm_cos_f64": _llvm_cos_f64,
   "_llvm_log10_f32": _llvm_log10_f32,
