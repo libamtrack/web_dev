@@ -234,7 +234,7 @@
     }
 
   ],
-  "deployDate":"Tue Oct  1 14:48:57 CEST 2019",
+  "deployDate":"Tue Oct  1 15:21:29 CEST 2019",
   "deployBranch":"feature/418_inactivation_cross_section",
-  "deployCommit":"a4c3f05"
+  "deployCommit":"6b150c0"
 }
