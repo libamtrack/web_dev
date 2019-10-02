@@ -125,10 +125,6 @@
         {
           "name": "Ion effective charge",
           "jsonConfigPath": "/PhysicsRoutines/EffectiveChargeFromE.json"
-        },
-        {
-          "name": "Inactivation cross section",
-          "jsonConfigPath": "/TrackStructure/InactivationCrossSection.json"
         }
       ]
     },
@@ -234,7 +230,7 @@
     }
 
   ],
-  "deployDate":"Tue Oct  1 15:21:29 CEST 2019",
-  "deployBranch":"feature/418_inactivation_cross_section",
-  "deployCommit":"6b150c0"
+  "deployDate":"Wed Oct  2 15:58:33 CEST 2019",
+  "deployBranch":"feature/compiled_lib/20191002_135730",
+  "deployCommit":"df2ff68"
 }
