@@ -87175,27 +87175,34 @@ function _dispose_chunk($0,$1) {
 }
 function _sbrk($0) {
  $0 = $0|0;
- var $$1 = 0, $1 = 0, $2 = 0, $3 = 0, $4 = 0, $5 = 0, $6 = 0, $7 = 0, $8 = 0, $9 = 0, label = 0, sp = 0;
+ var $$2 = 0, $1 = 0, $10 = 0, $11 = 0, $2 = 0, $3 = 0, $4 = 0, $5 = 0, $6 = 0, $7 = 0, $8 = 0, $9 = 0, label = 0, sp = 0;
  sp = STACKTOP;
  $1 = (_emscripten_get_sbrk_ptr()|0);
  $2 = HEAP32[$1>>2]|0;
  $3 = (($2) + ($0))|0;
- $4 = (_emscripten_get_heap_size()|0);
- $5 = ($3>>>0)>($4>>>0);
- if ($5) {
-  $6 = (_emscripten_resize_heap(($3|0))|0);
-  $7 = ($6|0)==(0);
-  if ($7) {
-   $8 = (___errno_location()|0);
-   HEAP32[$8>>2] = 48;
-   $$1 = (-1);
-   return ($$1|0);
+ $4 = ($3|0)<(0);
+ if ($4) {
+  $5 = (___errno_location()|0);
+  HEAP32[$5>>2] = 48;
+  $$2 = (-1);
+  return ($$2|0);
+ }
+ $6 = (_emscripten_get_heap_size()|0);
+ $7 = ($3>>>0)>($6>>>0);
+ if ($7) {
+  $8 = (_emscripten_resize_heap(($3|0))|0);
+  $9 = ($8|0)==(0);
+  if ($9) {
+   $10 = (___errno_location()|0);
+   HEAP32[$10>>2] = 48;
+   $$2 = (-1);
+   return ($$2|0);
   }
  }
  HEAP32[$1>>2] = $3;
- $9 = $2;
- $$1 = $9;
- return ($$1|0);
+ $11 = $2;
+ $$2 = $11;
+ return ($$2|0);
 }
 function ___muldsi3($a, $b) {
     $a = $a | 0;
