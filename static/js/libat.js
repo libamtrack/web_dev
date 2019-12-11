@@ -89,7 +89,6 @@ if (ENVIRONMENT_IS_NODE) {
 
 
   read_ = function shell_read(filename, binary) {
-    var ret;
     if (!nodeFS) nodeFS = require('fs');
     if (!nodePath) nodePath = require('path');
     filename = nodePath['normalize'](filename);
@@ -370,10 +369,28 @@ var jsCallStartIndex = 1;
 var functionPointers = new Array(0);
 
 // Wraps a JS function as a wasm function with a given signature.
-// In the future, we may get a WebAssembly.Function constructor. Until then,
-// we create a wasm module that takes the JS function as an import with a given
-// signature, and re-exports that as a wasm function.
 function convertJsFunctionToWasm(func, sig) {
+
+  // If the type reflection proposal is available, use the new
+  // "WebAssembly.Function" constructor.
+  // Otherwise, construct a minimal wasm module importing the JS function and
+  // re-exporting it.
+  if (typeof WebAssembly.Function === "function") {
+    var typeNames = {
+      'i': 'i32',
+      'j': 'i64',
+      'f': 'f32',
+      'd': 'f64'
+    };
+    var type = {
+      parameters: [],
+      results: sig[0] == 'v' ? [] : [typeNames[sig[0]]]
+    };
+    for (var i = 1; i < sig.length; ++i) {
+      type.parameters.push(typeNames[sig[i]]);
+    }
+    return new WebAssembly.Function(type, func);
+  }
 
   // The module is static, with the exception of the type section, which is
   // generated based on the signature passed in.
@@ -427,11 +444,11 @@ function convertJsFunctionToWasm(func, sig) {
   // This accepts an import (at "e.f"), that it reroutes to an export (at "f")
   var module = new WebAssembly.Module(bytes);
   var instance = new WebAssembly.Instance(module, {
-    e: {
-      f: func
+    'e': {
+      'f': func
     }
   });
-  var wrappedFunc = instance.exports.f;
+  var wrappedFunc = instance.exports['f'];
   return wrappedFunc;
 }
 
