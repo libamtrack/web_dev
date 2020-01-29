@@ -238,7 +238,7 @@
     }
 
   ],
-  "deployDate":"Tue Jan 28 23:17:04 CET 2020",
-  "deployBranch":"feature/descriptive-plot-legend",
-  "deployCommit":"d9f76e7"
+  "deployDate":"Wed Jan 29 15:06:21 CET 2020",
+  "deployBranch":"feature/compiled_lib/20200129_140512",
+  "deployCommit":"2d1ef26"
 }
