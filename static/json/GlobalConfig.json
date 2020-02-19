@@ -238,7 +238,7 @@
     }
 
   ],
-  "deployDate":"Wed Feb 12 15:06:07 CET 2020",
-  "deployBranch":"feature/compiled_lib/20200212_140510",
-  "deployCommit":"b48f296"
+  "deployDate":"Wed Feb 19 15:07:45 CET 2020",
+  "deployBranch":"feature/compiled_lib/20200219_140608",
+  "deployCommit":"8ae92e8"
 }
