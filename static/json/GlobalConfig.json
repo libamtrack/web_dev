@@ -238,7 +238,7 @@
     }
 
   ],
-  "deployDate":"Sun Mar 29 12:19:28 CEST 2020",
-  "deployBranch":"feature/babel_problem",
-  "deployCommit":"b43ed16"
+  "deployDate":"Wed Apr  1 16:09:38 CEST 2020",
+  "deployBranch":"feature/compiled_lib/20200401_140842",
+  "deployCommit":"0a037f2"
 }
