@@ -238,7 +238,7 @@
     }
 
   ],
-  "deployDate":"Wed Jun  3 16:38:36 CEST 2020",
-  "deployBranch":"feature/compiled_lib/20200603_141418",
-  "deployCommit":"12725c4"
+  "deployDate":"Sat Jan  9 18:18:23 CET 2021",
+  "deployBranch":"feature/594-general-upgrade-packages-ant",
+  "deployCommit":"1caf9e9"
 }
