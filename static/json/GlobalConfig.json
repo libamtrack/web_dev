@@ -238,7 +238,7 @@
     }
 
   ],
-  "deployDate":"Sat Jan  9 18:57:40 CET 2021",
+  "deployDate":"Sat Jan  9 19:29:51 CET 2021",
   "deployBranch":"feature/594-general-upgrade-packages-ant",
-  "deployCommit":"ab5037b"
+  "deployCommit":"0532c17"
 }
