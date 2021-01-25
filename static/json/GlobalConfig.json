@@ -238,7 +238,7 @@
     }
 
   ],
-  "deployDate":"Sat Jan 23 23:11:49 CET 2021",
-  "deployBranch":"feature/compiled_lib/20210123_221049",
-  "deployCommit":"3e67746"
+  "deployDate":"Mon Jan 25 16:05:41 CET 2021",
+  "deployBranch":"feature/606-Bortfeld-fix-units",
+  "deployCommit":"de30e0f"
 }
