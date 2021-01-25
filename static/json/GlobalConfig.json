@@ -107,36 +107,28 @@
       },
       "functions": [
         {
-          "name": "energy from MeV per u to MeV",
-          "jsonConfigPath": "/Converters/EMeVuFromEMeV.json"
-        },
-        {
-          "name": "energy from MeV to MeV per u",
-          "jsonConfigPath": "/Converters/EMeVfromEMeVu.json"
-        },
-        {
           "name": "beta from energy",
-          "jsonConfigPath": "/Converters/BetaFromESingle.json"
+          "jsonConfigPath": "/PhysicsRoutines/BetaFromESingle.json"
         },
         {
           "name": "energy from beta",
-          "jsonConfigPath": "/Converters/EFromBetaSingle.json"
+          "jsonConfigPath": "/PhysicsRoutines/EFromBetaSingle.json"
         },
         {
           "name": "gamma from energy",
-          "jsonConfigPath": "/Converters/GammaFromESingle.json"
+          "jsonConfigPath": "/PhysicsRoutines/GammaFromESingle.json"
         },
         {
           "name": "energy from gamma",
-          "jsonConfigPath": "/Converters/EFromGammaSingle.json"
+          "jsonConfigPath": "/PhysicsRoutines/EFromGammaSingle.json"
         },
         {
           "name": "momentum from energy",
-          "jsonConfigPath": "/Converters/RelMomentumFromESingle.json"
+          "jsonConfigPath": "/PhysicsRoutines/RelMomentumFromESingle.json"
         },
         {
           "name": "energy from momentum",
-          "jsonConfigPath": "/Converters/EFromMomentumSingle.json"
+          "jsonConfigPath": "/PhysicsRoutines/EFromMomentumSingle.json"
         }
       ]
     },
@@ -222,7 +214,7 @@
     }
 
   ],
-  "deployDate":"Mon Jan 25 18:27:30 CET 2021",
-  "deployBranch":"feature/610_MeV_u_converter",
-  "deployCommit":"5e875f8"
+  "deployDate":"Mon Jan 25 18:38:27 CET 2021",
+  "deployBranch":"feature/compiled_lib/20210125_173733",
+  "deployCommit":"9c6507b"
 }
