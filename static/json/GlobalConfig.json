@@ -222,7 +222,7 @@
     }
 
   ],
-  "deployDate":"Mon Jan 25 19:00:44 CET 2021",
+  "deployDate":"Mon Jan 25 20:10:42 CET 2021",
   "deployBranch":"feature/610_MeV_u_converter",
-  "deployCommit":"250b5cf"
+  "deployCommit":"4e38724"
 }
