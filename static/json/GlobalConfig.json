@@ -1,7 +1,7 @@
 {
   "applicationTile": "Libamtrack",
   "introText": "libamtrack provides computational routines for the prediction of detector response and radiobiological efficiency in heavy charged particle beams.",
-  "footerText1": "LibamtrackWeb ©2019",
+  "footerText1": "LibamtrackWeb ©2021",
   "footerText2": "This project has received funding from the European Union's H2020 Research and Innovation Programme, under Grant Agreement No: 730983",
   "categories": [
     {
@@ -107,28 +107,36 @@
       },
       "functions": [
         {
+          "name": "energy from MeV per u to MeV",
+          "jsonConfigPath": "/Converters/EMeVuFromEMeV.json"
+        },
+        {
+          "name": "energy from MeV to MeV per u",
+          "jsonConfigPath": "/Converters/EMeVfromEMeVu.json"
+        },
+        {
           "name": "beta from energy",
-          "jsonConfigPath": "/PhysicsRoutines/BetaFromESingle.json"
+          "jsonConfigPath": "/Converters/BetaFromESingle.json"
         },
         {
           "name": "energy from beta",
-          "jsonConfigPath": "/PhysicsRoutines/EFromBetaSingle.json"
+          "jsonConfigPath": "/Converters/EFromBetaSingle.json"
         },
         {
           "name": "gamma from energy",
-          "jsonConfigPath": "/PhysicsRoutines/GammaFromESingle.json"
+          "jsonConfigPath": "/Converters/GammaFromESingle.json"
         },
         {
           "name": "energy from gamma",
-          "jsonConfigPath": "/PhysicsRoutines/EFromGammaSingle.json"
+          "jsonConfigPath": "/Converters/EFromGammaSingle.json"
         },
         {
           "name": "momentum from energy",
-          "jsonConfigPath": "/PhysicsRoutines/RelMomentumFromESingle.json"
+          "jsonConfigPath": "/Converters/RelMomentumFromESingle.json"
         },
         {
           "name": "energy from momentum",
-          "jsonConfigPath": "/PhysicsRoutines/EFromMomentumSingle.json"
+          "jsonConfigPath": "/Converters/EFromMomentumSingle.json"
         }
       ]
     },
@@ -214,7 +222,7 @@
     }
 
   ],
-  "deployDate":"Mon Jan 25 17:22:12 CET 2021",
-  "deployBranch":"feature/261_reorganization",
-  "deployCommit":"aabbf00"
+  "deployDate":"Mon Jan 25 18:27:30 CET 2021",
+  "deployBranch":"feature/610_MeV_u_converter",
+  "deployCommit":"5e875f8"
 }
