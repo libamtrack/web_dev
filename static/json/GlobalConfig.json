@@ -222,7 +222,7 @@
     }
 
   ],
-  "deployDate":"Wed Jan 27 15:30:43 CET 2021",
-  "deployBranch":"feature/compiled_lib/20210127_142947",
-  "deployCommit":"5ec4f2e"
+  "deployDate":"Wed Feb  3 15:32:26 CET 2021",
+  "deployBranch":"feature/compiled_lib/20210203_143132",
+  "deployCommit":"cecc05f"
 }
