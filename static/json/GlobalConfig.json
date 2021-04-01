@@ -226,7 +226,7 @@
     }
 
   ],
-  "deployDate":"Thu Apr  1 23:27:02 CEST 2021",
+  "deployDate":"Thu Apr  1 23:33:14 CEST 2021",
   "deployBranch":"feature/630-katz-model-rbe",
-  "deployCommit":"7ef94d3"
+  "deployCommit":"1e558c4"
 }
