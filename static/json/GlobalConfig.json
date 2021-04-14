@@ -90,8 +90,8 @@
           "jsonConfigPath": "/TrackStructure/InactivationCrossSection.json"
         },
         {
-          "name": "Relative Biological Effectiveness",
-          "jsonConfigPath": "/TrackStructure/KatzModelRBE.json"
+          "name": "Relativistic beta vs energy",
+          "jsonConfigPath": "/PhysicsRoutines/BetaFromE.json"
         }
       ]
     },
@@ -219,14 +219,10 @@
     {
       "name": "katz_rdd_er",
       "jsonConfigPath": "/dictionaries/KatzRDDER.json"
-    },
-    {
-      "name": "katz_flavour",
-      "jsonConfigPath": "/dictionaries/KatzFlavour.json"
     }
 
   ],
-  "deployDate":"Thu Apr  8 22:58:32 CEST 2021",
-  "deployBranch":"feature/630-katz-model-rbe",
-  "deployCommit":"6423d32"
+  "deployDate":"Wed Apr 14 16:37:11 CEST 2021",
+  "deployBranch":"feature/compiled_lib/20210414_143612",
+  "deployCommit":"fcb4aa7"
 }
