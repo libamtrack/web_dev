@@ -1,0 +1,18 @@
+[
+    {
+        "name" : "Vavilov",
+        "value": 1 
+    },
+    {
+        "name" : "Landau",
+        "value": 2 
+    },
+    {
+        "name" : "Gauss",
+        "value": 3
+    },
+    {
+        "name" : "auto",
+        "value": 4
+    }
+]

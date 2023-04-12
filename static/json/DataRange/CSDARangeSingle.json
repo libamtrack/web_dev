@@ -1,0 +1,51 @@
+{
+  "visibleName": "CSDA Range of proton or ion",
+  "functionName": "AT_CSDA_range_g_cm2_single",
+  "description": "CSDA range using the PSTAR stopping power data. It is possible to calculate a range until final energy is reached, instead of until full particle stop.",
+  "plot": false,
+  "resultUnit": "g/cm^2",
+  "resultPrecision": 3,
+  "formItems": [
+    {
+      "type": "input",
+      "parameterName": "E_initial_MeV_u",
+      "label": "Initial Energy [MeV/u]",
+      "placeholder": "Initial energy",
+      "defaultValue": "100",
+      "validations": {
+        "type": "float",
+        "min": "1e-7",
+        "max": "9e3"
+      }
+    },
+    {
+      "type": "input",
+      "parameterName": "E_final_MeV_u",
+      "label": "Final Energy [MeV/u]",
+      "placeholder": "Final energy",
+      "defaultValue": "0",
+      "validations": {
+        "type": "float",
+        "min": "0",
+        "max": "1e4"
+      }
+    },
+    {
+      "type": "select",
+      "parameterName": "particle_no",
+      "label": "Particle",
+      "values": "particles",
+      "asManyAsPoints": false,
+      "defaultValue": 1001,
+      "description": "Choose particle type"
+    },
+    {
+      "type": "select",
+      "parameterName": "material_no",
+      "label": "Material",
+      "values": "materials",
+      "defaultValue": 1,
+      "description": "Choose material type"
+    }
+  ]
+}

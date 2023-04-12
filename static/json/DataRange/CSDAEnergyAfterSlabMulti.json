@@ -1,0 +1,67 @@
+{
+    "visibleName": "Energy decrease passing slab",
+    "functionName": "AT_CSDA_energy_after_slab_E_MeV_u_multi",
+    "description": "The ion energy after passing a slab of material (CSDA approach, Bethe-Bloch stopping power)",
+    "plot": true,
+    "xTitle": "Initial energy (before slab) [MeV/u]",
+    "yTitle": "Final energy (after slab) [MeV/u]",
+    "formItems": [
+        {
+            "type": "entry_module",
+            "parameterName": "E_initial_MeV_u",
+            "label": "energy [MeV/u]",
+            "startholder": "50",
+            "endholder": "250",
+            "intervalType": "points",
+            "stepDefaultValue": "1",
+            "pointsDefaultNumber": "500",
+            "validations": {
+                "type": "float",
+                "min": "1e-6",
+                "max": "9000"
+            }
+        },
+        {
+            "type": "input",
+            "parameterName": "slab_thickness_cm",
+            "label": "Thickness [cm]",
+            "placeholder": "Slab thickness [cm]",
+            "defaultValue": "2.0",
+            "description": "Thickness of a slab",
+            "validations": {
+                "type": "float",
+                "min": "1e-7",
+                "max": "1e6"
+            }
+        },
+        {
+            "type": "select",
+            "parameterName": "particle_no",
+            "label": "Particle",
+            "values": "particles",
+            "asManyAsPoints": true,
+            "defaultValue": 1001,
+            "description": "Choose particle type"
+        },
+        {
+            "type": "select",
+            "parameterName": "material_no",
+            "label": "Material",
+            "values": "materials",
+            "defaultValue": 1,
+            "description": "Choose material type"
+        }
+    ],
+    "moreOptions": {
+        "visible": true,
+        "defaultXAxisType": "linear",
+        "defaultYAxisType": "linear",
+        "plotType": "lines"
+    },
+    "modals": {
+        "dataSeries": true,
+        "download": true,
+        "showDataSeries": true,
+        "deleteAll": true
+    }
+}

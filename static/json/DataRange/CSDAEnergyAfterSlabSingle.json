@@ -1,0 +1,51 @@
+{
+  "visibleName": "Energy decrease passing slab",
+  "functionName": "AT_CSDA_energy_after_slab_E_MeV_u_single",
+  "description": "The ion energy after passing a slab of material (CSDA approach, Bethe-Bloch stopping power)",
+  "plot": false,
+  "resultUnit": "MeV/u",
+  "resultPrecision": 3,
+  "formItems": [
+    {
+      "type": "input",
+      "parameterName": "E_initial_MeV_u",
+      "label": "Initial Energy [MeV/u]",
+      "placeholder": "Initial energy",
+      "defaultValue": "150",
+      "validations": {
+        "type": "float",
+        "min": "0",
+        "max": "1e4"
+      }
+    },
+    {
+      "type": "input",
+      "parameterName": "slab_thickness_cm",
+      "label": "Slab thickness [cm]",
+      "placeholder": "Slab thickness[cm]",
+      "defaultValue": "3.0",
+      "description": "Thickness of slab",
+      "validations": {
+        "type": "float",
+        "min": "1e-7",
+        "max": "1e5"
+      }
+    },
+    {
+      "type": "select",
+      "parameterName": "particle_no",
+      "label": "Particle",
+      "values": "particles",
+      "asManyAsPoints": false,
+      "defaultValue": 1001,
+      "description": "Choose particle type"
+    },
+    {
+      "type": "select",
+      "parameterName": "material_no",
+      "label": "Material",
+      "values": "materials",
+      "defaultValue": 1,
+      "description": "Choose material type"
+    }  ]
+}

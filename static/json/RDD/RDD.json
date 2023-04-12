@@ -1,0 +1,100 @@
+{
+  "visibleName": "Radial dose distribution",
+  "functionName": "AT_D_RDD_Gy",
+  "description": "Dose distribution around ion track",
+  "xTitle": "Distance [m]",
+  "yTitle": "Dose [Gy]",
+  "plot": true,
+  "unit": "Gy",
+  "formItems": [
+    {
+      "type": "entry_module",
+      "parameterName": "r_m",
+      "label": "radius [m]",
+      "startholder": "1e-9",
+      "endholder": "1e-5",
+      "intervalType": "points",
+      "stepDefaultValue": "0.000001",
+      "pointsDefaultNumber": "300",      
+      "validations": {
+        "type": "float",
+        "min": "0.0",
+        "max": "1000.0"
+      }
+    },
+    {
+      "type": "input",
+      "parameterName": "E_MeV_u",
+      "label": "Energy [MeV/u]",
+      "placeholder": "150",
+      "defaultValue": "150",
+      "validations": {
+        "type": "float",
+        "min": "0.000001",
+        "max": "1000000.0"
+      }
+    },
+    {
+      "type": "select",
+      "parameterName": "particle_no",
+      "label": "Particle",
+      "values": "particles",
+      "asManyAsPoints": false,
+      "defaultValue": 1001,
+      "description": "Choose particle type"
+    },
+    {
+      "type": "select",
+      "parameterName": "material_no",
+      "label": "Material",
+      "values": "materials",
+      "defaultValue": 1,
+      "description": "Choose material type"
+    },
+    {
+      "type": "select",
+      "parameterName": "rdd_model",
+      "label": "RDD model",
+      "values": "rdd_models",
+      "asManyAsPoints": false,
+      "defaultValue": 3,
+      "description": "Choose RDD model"
+    },
+    {
+      "type": "input",
+      "parameterName": "rdd_parameter",
+      "label": "Model params:",
+      "asManyAsPoints": false,
+      "defaultValue": "0.00000001",
+      "description": "Model parameter"
+    },
+    {
+      "type": "select",
+      "parameterName": "er_model",
+      "label": "ER model",
+      "values": "er_models",
+      "asManyAsPoints": false,
+      "defaultValue": 7,
+      "description": "Choose ER model"
+    },
+    {
+      "type": "select",
+      "parameterName": "stopping_power_source_no",
+      "label": "LET Source",
+      "values": "stopping_power_source_no",
+      "defaultValue": 1,
+      "description": "Choose source type"
+    }
+  ],
+  "moreOptions": {
+    "visible": true,
+    "defaultXAxisType": "log",
+    "defaultYAxisType": "log",
+    "plotType": "lines"
+  },
+  "modals": {
+    "dataSeries": true,
+    "download": true,
+    "deleteAll": true
+  }
+}

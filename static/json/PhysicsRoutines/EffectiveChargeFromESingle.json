@@ -1,0 +1,30 @@
+{
+  "visibleName": "Effective Charge",
+  "functionName": "AT_effective_charge_from_E_MeV_u_single",
+  "description": "Ion effective charge according to Barkas-Bethe-approximation for particle with given energy per atomic mass unit",
+  "plot": false,
+  "resultPrecision": 6,
+  "formItems": [
+    {
+      "type": "input",
+      "parameterName": "E_MeV_u",
+      "label": "Energy [MeV/u]",
+      "placeholder": "Energy [MeV/u]",
+      "defaultValue": "10",
+      "validations": {
+        "type": "float",
+        "min": "0.000001",
+        "max": "10000000000000000"
+      }
+    },
+    {
+      "type": "select",
+      "parameterName": "particle_no",
+      "label": "Particle",
+      "values": "particles",
+      "asManyAsPoints": true,
+      "defaultValue": 6012,
+      "description": "Choose particle type"
+    }
+  ]
+}

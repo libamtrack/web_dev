@@ -1,0 +1,37 @@
+{
+  "visibleName": "Momentum from energy",
+  "functionName": "AT_momentum_MeV_c_u_from_E_MeV_u",
+  "description": "Relativistic momentum as a function of kinetic energy",
+  "xTitle": "Energy [MeV/u]",
+  "yTitle": "Momentum [MeV/c/u]",
+  "plot": true,
+  "formItems": [
+    {
+      "type": "entry_module",
+      "parameterName": "E_MeV_u",
+      "label": "energy [MeV/u]",
+      "startholder": "0.0",
+      "endholder": "300",
+      "intervalType": "points",
+      "stepDefaultValue": "0.1",
+      "pointsDefaultNumber": "300",
+      "validations": {
+        "type": "float",
+        "min": "0.0",
+        "max": "1000000000.0"
+      }
+    }
+  ],
+  "moreOptions": {
+    "visible": true,
+    "defaultXAxisType": "linear",
+    "defaultYAxisType": "linear",
+    "plotType": "lines"
+  },
+  "modals": {
+    "dataSeries": true,
+    "download": true,
+    "showDataSeries": true,
+    "deleteAll": true
+  }
+}
