@@ -1,7 +1,7 @@
 {
   "applicationTile": "Libamtrack",
   "introText": "libamtrack provides computational routines for the prediction of detector response and radiobiological efficiency in heavy charged particle beams.",
-  "footerText1": "LibamtrackWeb ©2022",
+  "footerText1": "LibamtrackWeb ©2024",
   "footerText2": "This project has received funding from the European Union's H2020 Research and Innovation Programme, under Grant Agreement No: 730983 (INSPIRE project)",
   "categories": [
     {
@@ -197,6 +197,10 @@
       "jsonConfigPath": "/dictionaries/AtomicNumbers.json"
     },
     {
+      "name": "energy_units",
+      "jsonConfigPath": "/dictionaries/EnergyUnits.json"
+    },
+    {
       "name": "materials",
       "jsonConfigPath": "/dictionaries/Materials.json"
     },
@@ -230,7 +234,7 @@
     }
 
   ],
-  "deployDate":"Tue Aug 20 12:13:00 UTC 2024",
+  "deployDate":"Tue Aug 20 12:17:30 UTC 2024",
   "deployBranch":"refs/heads/master",
-  "deployCommit":"e12f332efdfbbba1e85ac879d52875efaef7fe4b"
+  "deployCommit":"4f2b44cbc6b4be7594cf7d67bf7fac6598473387"
 }
